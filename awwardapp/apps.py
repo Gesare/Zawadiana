@@ -5,4 +5,4 @@ class AwwardappConfig(AppConfig):
     name = 'awwardapp'
    
    def ready(self):
-        import awardapp.signals
+        import awwardapp.signals

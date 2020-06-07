@@ -21,7 +21,7 @@ from awwardapp.forms import RegisterForm
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('awardapp.urls')),
+    url(r'', include('awwardapp.urls')),
     url(r'^accounts/register/$',
         RegistrationView.as_view(
             form_class=RegisterForm
