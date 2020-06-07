@@ -1,5 +1,5 @@
 from django import forms
-from .models import *
+from .models import Profile,Projects
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from registration.forms import RegistrationForm
