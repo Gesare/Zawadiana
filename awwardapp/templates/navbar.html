@@ -1,7 +1,7 @@
-<nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<nav class="pl-5 pr-5 navbar navbar-expand-lg navbar-dark bg-info sticky-top">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand font-weight-bold" href="{% url 'index' %}">Awards</a>
+    <a class="navbar-brand font-weight-bold" href="{% url 'index' %}">Zawadiana</a>
   
     <!-- Collapse button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -28,7 +28,7 @@
         {% if user.is_authenticated %}
         <ul>
           <li class="nav-item">
-            <a class="nav-link btn btn-block text-white success-color-dark" href="{%url 'new-project'%}">SUBMIT YOUR SITE </a>
+            <a class="nav-link btn btn-block text-white warning-color-dark" href="{%url 'new-project'%}">SUBMIT YOUR SITE </a>
           </li>
         </ul>
         <ul >
