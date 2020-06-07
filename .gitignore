@@ -1,0 +1,11 @@
+virtual/
+*.pyc 
+__pycache__
+.vscode
+.env
+mongoengine
+setup.py
+setup.cfg
+mongoengine.egg-info
+dist
+build
