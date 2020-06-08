@@ -8,9 +8,6 @@ html, body {
   min-height: 100%;
 }
 
-// Within style tags in your html file
-* { box-sizing: border-box; }
-
 .grid:after {
   content: '';
   display: block;
