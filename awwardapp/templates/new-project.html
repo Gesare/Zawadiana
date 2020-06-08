@@ -26,22 +26,23 @@
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <h4 class="w3-center"><b >ZAWADIANA ! </b></h4>
+     <h4 class="w3-center"><b >ZAWADIANA ! </b></h4>
     <div class="w3-center">
-        {% if not my_profile_photo %}
-        <img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:45%;" class="w3-circle w3-center">
+        {% if user.profile.photo %}
+         <img src="{{ user.profile.photo.url }}" style="width:45%;" class="w3-circle w3-center">
         {%else%}
-        <img src="{{my_profile_photo}}" style="width:45%;" class="w3-circle w3-center">
+        <img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:45%;" class="w3-circle w3-center">
         {% endif %}
     </div>
 
     <p class="w3-text-white w3-center">{{user.username}}</p>
-    {% if my_profile.bio %}
-            <p>{{ my_profile.bio }}</p>
+    {% if user.profile.bio %}
+            <p>{{ user.profile.bio}}</p>
             {%else%}
             <P>No user bio for {{user.username}}</P>
             {% endif %}
     <hr>
+
 
   </div>
   <div class="w3-bar-block">
