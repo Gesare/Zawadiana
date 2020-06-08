@@ -59,8 +59,9 @@
         {% if user.profile.photo %}
         <img src="{{ user.profile.photo.url }}" alt="" class="d-flex justify-content-start rounded-circle mb-1 img-fluid mr-1" style="width: 150px;">
         {% else %}
-        <img src="../../../static/profile/default.png" alt="" class="d-flex justify-content-start rounded-circle mb-1 img-fluid mr-1" style="width: 150px;">
+        <img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:45%;" class="w3-circle w3-center">
           {% endif %}
+          <br> <br>
         <h4> <span class="font-weight-bold"> Names:</span>  {{user.first_name}} {{user.last_name|upper}} </h4>
         <p> <span class="font-weight-bold"> Email:</span>  {{user.email}} </p>
         <p> <span class="font-weight-bold"> Bio:</span> {{ user.profile.bio}}  </p>
