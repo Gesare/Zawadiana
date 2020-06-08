@@ -86,7 +86,7 @@ Open terminal on `localhost:8000`
 ## Running the tests
 
 ```bash
-python3.8 manage.py test collection
+python3.8 manage.py test awwardapp
 
 ```
 
