@@ -6,7 +6,7 @@ import datetime as dt
 from .models import Profile,Projects
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
-from .forms import *
+from .forms import ProfileUpdateForm,RegisterForm,NewProjectForm
 from django.contrib import messages
 from rest_framework.response import Response
 from rest_framework.views import APIView
