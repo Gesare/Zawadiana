@@ -40,9 +40,6 @@
               {% if project_item.project_image %}
               <a href="/project/{{project_item.id}}">
                 <img class="card-img-top" src="{{project_item.project_image.url}}" alt="{{ project_item.project_name }}" height="300px">
-                <!-- <p id="overlay"class="text"> 
-                  <button class="btn btn-default btn-circle btn-lg" ><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></button>
-                </p> -->
               </a>
               {% else %}
               <a href="/project/{{project_item.id}}">
